@@ -131,7 +131,7 @@ nav {
 .promo h2{
     color: white;
     font-size: 60px;
-    margin: 20px;
+    margin: 20px 20px 20px 50px;
 }
 .container {
     background: url(img/bg4.jpg);
@@ -195,7 +195,7 @@ nav {
 .sucur h2{
     color: white;
     font-size: 60px;
-    margin: 20px;
+    margin: 20px 20px 20px 50px;
 }
 
 /*----------------Final----------------*/
@@ -217,7 +217,64 @@ border: solid rgb(255, 144, 144);
     grid-gap: 1em;
     grid-template-rows: minmax(100px auto);
 }
-
+/**/
+.icon-bar1 {
+    float: right;
+    transform: translateY(-25px);
+  }
+  .icon-bar1 a {
+    padding: 0px 10px 0px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar1 a:hover {
+    color: rgb(137, 34, 34);
+  }
+/**/
+/*----------------Redes sociales----------------*/
+.icon-bar {
+    float: unset;
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: black;
+    background-image: none;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background-image: linear-gradient(rgb(168, 0, 214), red, yellow);
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
 @media only screen and (max-width: 650px){
     .logo{
         margin-left: 10px;
@@ -261,15 +318,73 @@ border: solid rgb(255, 144, 144);
     .buscar input[type="submit"]{
         width: 40%;
         padding: 10px;
-    }
-    .container{
-        padding: 10px;
-        
-    }
+    }  
+
     .promo h2{
         color: white;
         font-size: 30px;
         margin: 10px;
+    }
+    .container {
+        padding: 10px;
+        background: url(img/bg4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+        grid-gap: 1em;
+        grid-template-rows: minmax(100px auto);
+    }
+    .container div {
+        border-radius: 10px;
+        background: #ffffff;
+        padding: 10px;    
+        width: 120px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 100px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+    .card h1{
+        font-size: 15px;
+    }
+    .card .desc{
+        font-size: 10px;
+    }
+    .card:hover{
+      position: relative;
+      transform: translateY(-1%);
+    }
+    
+    .price {
+      color: grey;
+      font-size: 12px;
+    }
+    .prbe{
+        color: red;
+        text-decoration: line-through;
+        font-size: 12px;
+    }
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 12px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+    .card img{
+        border-radius: 10px;
     }
     .sucur h2{
         color: white;
@@ -286,12 +401,28 @@ border: solid rgb(255, 144, 144);
     .final{
         padding: 10px;
     }
-    .termino{
+    .creditos{
         font-size: 10px;
+    }
+    .termino{
+        font-size: 5px;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(5rem, 2fr));
+        grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
         grid-gap: 1em;
         grid-template-rows: minmax(auto auto);
+    }
+    .icon-bar1 {
+        float: right;
+        transform: translateY(-15px);
+      }
+    .icon-bar1 a{
+        padding: 0;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    /*Barra flotante*/
+    .icon-bar a{
+        font-size: 15px;
     }
 }
